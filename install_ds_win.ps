@@ -1,0 +1,21 @@
+# Install all software and third-party packages for Data Science Bootcamps
+
+# Install Anaconda package manager
+# - includes GUI options to install VS code and Jupyter Notebook
+# - includes numpy, scipy, pandas, matplotlib, seaborn, sklearn
+choco install anaconda3
+choco install git
+choco install vscode
+conda install -c anaconda jupyter
+
+# Third-party packages not included in Anaconda installation
+# Missingno, Mlxtend, spaCy, spaCY language models, tensorflow/keras
+conda install -c conda-forge missingno
+conda install -c conda-forge mlxtend 
+
+# NLP 
+conda install -c conda-forge spacy
+python -m spacy download en_core_web_sm 
+python -m spacy download en_core_web_md
+
+
